@@ -7,12 +7,12 @@
 const Card = ({ image, altText, title, text, githubLink, liveLink }) => {
   return (
     <div className=" grid  hover:bg-[#00000031] duration-[0.3s]  border-[3px] border-lighTeal rounded-[12px] h-min p-[2rem] hover:rounded-none">
-      <img src={image} alt={altText} className="" />
+      <img src={image} alt={altText} className="mb-[0.5rem]" />
 
       <div className="grid">
-        <div>
-          <p>{title}</p>
-          <p>{text}</p>
+        <div className="mb-[1rem]">
+          <p className="text-[1.3rem] font-[600] ">{title}</p>
+          <p className="font-[200]">{text}</p>
         </div>
 
         <span className=" flex gap-[2rem] place-self-center">

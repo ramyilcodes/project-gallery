@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        tablet: { max: "950px" },
-        mobile: { max: "600px" },
+        tablet: { max: "1050px" },
+        mobile: { max: "750px" },
       },
 
       colors: {

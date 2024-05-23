@@ -19,14 +19,14 @@ const Card = ({ image, altText, title, text, githubLink, liveLink }) => {
           <a
             href={liveLink}
             target="_blank"
-            className=" px-[1.5rem] py-[0.5rem] border-solid rounded-[5px ] hover:text-darkTeal border-peach border-[1px] border-[solid] hover:bg-peach"
+            className=" px-[1.5rem] py-[0.5rem] font-[500] border-solid rounded-[5px ] hover:text-darkTeal border-peach border-[1px] border-[solid] hover:bg-peach"
           >
             Live
           </a>
           <a
             href={githubLink}
             target="_blank"
-            className=" px-[1.5rem] py-[0.5rem] border-solid rounded-[5px ] hover:text-darkTeal border-peach border-[1px] border-[solid] hover:bg-peach"
+            className=" px-[1.5rem] py-[0.5rem] font-[500] border-solid rounded-[5px ] hover:text-darkTeal border-peach border-[1px] border-[solid] hover:bg-peach"
           >
             Github
           </a>

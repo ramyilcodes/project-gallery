@@ -14,7 +14,9 @@ import singlePrice from "./assets/singlePrice.png";
 function App() {
   return (
     <body className="font-['prompt'] grid place-items-center bg-darkTeal text-lightTeal py-[3rem] px-[2rem] tablet:py-[2.5rem] mobile:py-[1rem] mobile:px-[1rem]">
-      <h1 className=" text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">Ramnan's Projects</h1>
+      <h1 className=" text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">
+        Ramnan's Projects
+      </h1>
 
       <section className=" px-[2rem] grid gap-[2rem] grid-cols-3 mobile:grid-cols-1 mobile:gap-[3rem] tablet:grid-cols-2 tablet:gap-[1.5]">
         <Card
@@ -33,7 +35,7 @@ function App() {
           }
           image={nnia}
           altText={"image of NNIA's about page"}
-          liveLink={"https://nianigeria.netlify.app/"}
+          liveLink={"https://nnia.ng/"}
           githubLink={"https://github.com/ramyilcodes/hub-project.git"}
         />
 

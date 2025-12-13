@@ -1,5 +1,11 @@
 import "./App.css";
 import Card from "./components/card.jsx";
+import ContactCard from "./components/contactCard.jsx";
+import myResume from ".././public/Ramnan Ramyil 2025.pdf";
+import downloadIcon from "./assets/download-icon.svg";
+import githubIcon from "./assets/github-white-icon.webp";
+import emailIcon from "./assets/email-icon.png";
+import linkedinIcon from "./assets/LinkedIn_icon.png";
 import amica from "./assets/amica.png";
 import huddle from "./assets/huddle.png";
 import newsHomepage from "./assets/newsHomepage.png";
@@ -13,15 +19,47 @@ import singlePrice from "./assets/singlePrice.png";
 
 function App() {
   return (
-    <body className="font-['prompt'] grid place-items-center bg-darkTeal text-lightTeal py-[3rem] px-[2rem] tablet:py-[2.5rem] mobile:py-[1rem] mobile:px-[1rem]">
-      <h1 className=" text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">
-        Ramnan's Projects
-      </h1>
+    <body className="font-['prompt'] grid place-items-center bg-darkTeal text-lightTeal px-[2rem] tablet:py-[2.5rem] mobile:py-[1rem] mobile:px-[1rem]">
+      <nav
+        id="top"
+        className=" w-full flex justify-between items-center sticky top-0 bg-inherit"
+      >
+        <a href="#top">
+          <h1 className=" text-[3rem] mobile:text-[2rem] tablet:text-[2.5rem]  inline">
+            Ramnan Ramyil
+          </h1>
+        </a>
+
+        <a href={myResume} download="Ramnan_Ramyil_Resume.pdf">
+          <span className="flex items-center">
+            <span className="text-[1.5rem] tablet:text-[1rem] mobile:hidden">
+              My Resume
+            </span>
+            <img
+              src={downloadIcon}
+              alt="click this icon to download my resume"
+              className=" size-[3.5rem] inline hover:bg-[#00000031] rounded-full p-[0.5rem] ml-[0.5rem]"
+            />
+          </span>
+        </a>
+      </nav>
+
+      {/* <h2 className=" text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">
+        Projects
+      </h2>
+
+      <section className="px-[2rem] grid gap-[2rem] grid-cols-3 mobile:grid-cols-1 mobile:gap-[3rem] tablet:grid-cols-2 tablet:gap-[1.5]"></section> */}
+
+      <h2 className=" text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">
+        Projects
+      </h2>
 
       <section className=" px-[2rem] grid gap-[2rem] grid-cols-3 mobile:grid-cols-1 mobile:gap-[3rem] tablet:grid-cols-2 tablet:gap-[1.5]">
         <Card
           title={"Amica"}
-          text={"An accounting app for small businesses"}
+          text={
+            "An accounting app for small businesses. Features simple CRUD functionalities."
+          }
           image={amica}
           altText={"image of amica dashboard"}
           liveLink={"https://amica-app.netlify.app"}
@@ -121,8 +159,34 @@ function App() {
           }
         />
       </section>
+
+      <h2 className=" text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">
+        Contact Me
+      </h2>
+
+      <section className="px-[2rem] grid gap-[2rem] grid-cols-3 mobile:grid-cols-1 mobile:gap-[3rem] tablet:grid-cols-2 tablet:gap-[1.5]">
+        <ContactCard
+          siteIcon={githubIcon}
+          siteLink={"https://github.com/ramyilcodes"}
+          contactName={"ramyilcodes"}
+        />
+
+        <ContactCard
+          siteIcon={linkedinIcon}
+          siteLink={"https://www.linkedin.com/in/ramnan-ramyil-05323924a/"}
+          contactName={"Ramnan Ramyil"}
+        />
+
+        <ContactCard
+          siteIcon={emailIcon}
+          // siteLink={"https://github.com/ramyilcodes"}
+          contactName={"ramyilramnan@gmail.com"}
+        />
+      </section>
     </body>
   );
 }
 
 export default App;
+
+

@@ -6,6 +6,9 @@ import downloadIcon from "./assets/download-icon.svg";
 import githubIcon from "./assets/github-white-icon.webp";
 import emailIcon from "./assets/email-icon.png";
 import linkedinIcon from "./assets/LinkedIn_icon.png";
+import fundamentals from "./assets/fundamentals.png";
+import qrCode from "./assets/qrCode.png";
+import adsofun from "./assets/adsofun.png";
 import amica from "./assets/amica.png";
 import huddle from "./assets/huddle.png";
 import newsHomepage from "./assets/newsHomepage.png";
@@ -56,6 +59,39 @@ function App() {
 
       <section className=" px-[2rem] grid gap-[2rem] grid-cols-3 mb-[10rem] mobile:mb-[7rem] mobile:grid-cols-1 mobile:gap-[3rem] tablet:grid-cols-2 tablet:gap-[1.5]">
         <Card
+          title={"Adsofun"}
+          text={"Volunteer work with a friend for Adsofun Concepts LLC"}
+          image={adsofun}
+          altText={"image of Adsofun's landing page"}
+          githubLink={"https://github.com/ramyilcodes/adsofun.git"}
+          liveLink={"https://adsofun.vercel.app/"}
+        />
+
+        <Card
+          title={"Fundamentals Highschool"}
+          text={
+            "Volunteered to make a landing page for The Fundamentals Highschool."
+          }
+          image={fundamentals}
+          altText={"image of The fundamentals Highschool website"}
+          liveLink={"https://thefundamentalshighschool.onrender.com/"}
+          githubLink={
+            "https://github.com/ramyilcodes/thefundamentalshighschool.git"
+          }
+        />
+
+        <Card
+          title={"NNIA"}
+          text={
+            "Group volunteer project for nHub Foundation. I developed the about and programmes pages"
+          }
+          image={nnia}
+          altText={"image of NNIA's about page"}
+          liveLink={"https://nnia.ng/"}
+          githubLink={"https://github.com/ramyilcodes/hub-project.git"}
+        />
+
+        <Card
           title={"Amica"}
           text={
             "An accounting app for small businesses. Features simple CRUD functionalities."
@@ -67,14 +103,12 @@ function App() {
         />
 
         <Card
-          title={"NNIA"}
-          text={
-            "Group project for nHub Foundation. Developed the about, and programmes pages"
-          }
-          image={nnia}
-          altText={"image of NNIA's about page"}
-          liveLink={"https://nnia.ng/"}
-          githubLink={"https://github.com/ramyilcodes/hub-project.git"}
+          title={"News Home Page"}
+          text={"A challenge from frontendmentor.io"}
+          image={newsHomepage}
+          altText={"image of a news homepage"}
+          githubLink={"https://github.com/ramyilcodes/fem-news-homepage.git"}
+          liveLink={"https://ramyil-news-homepage.netlify.app/"}
         />
 
         <Card
@@ -89,41 +123,12 @@ function App() {
         />
 
         <Card
-          title={"News Home Page"}
-          text={"A challenge from frontendmentor.io"}
-          image={newsHomepage}
-          altText={"image of a news homepage"}
-          githubLink={"https://github.com/ramyilcodes/fem-news-homepage.git"}
-          liveLink={"https://ramyil-news-homepage.netlify.app/"}
-        />
-
-        <Card
           title={"Amica Landing Page"}
           text={'Landing page for the accounting application "Amica"'}
           image={amicaLanding}
           altText={"image of Amica's page"}
           githubLink={"https://github.com/ramyilcodes/amica-landing-page.git"}
           liveLink={"https://amica-landing-page.netlify.app/"}
-        />
-
-        <Card
-          title={"Product Preview Card"}
-          text={"Product card component from frontendmentor.io"}
-          image={productPreview}
-          altText={"image of product preview card"}
-          liveLink={"https://ramyil-product-preview-card.netlify.app/"}
-          githubLink={"https://github.com/ramyilcodes/product-preview-card.git"}
-        />
-
-        <Card
-          title={"Three Column Preview Card"}
-          text={"A challenge from frontendmentor.io"}
-          image={threeColumn}
-          altText={"image of preview card component consisting of 3 columns"}
-          liveLink={"https://ramyil-3-column-preview-card.netlify.app/"}
-          githubLink={
-            "https://github.com/ramyilcodes/fem-three-column-preview-card.git"
-          }
         />
 
         <Card
@@ -138,6 +143,26 @@ function App() {
         />
 
         <Card
+          title={"Three Column Preview Card"}
+          text={"A challenge from frontendmentor.io"}
+          image={threeColumn}
+          altText={"image of preview card component consisting of 3 columns"}
+          liveLink={"https://ramyil-3-column-preview-card.netlify.app/"}
+          githubLink={
+            "https://github.com/ramyilcodes/fem-three-column-preview-card.git"
+          }
+        />
+
+        <Card
+          title={"Product Preview Card"}
+          text={"Product card component from frontendmentor.io"}
+          image={productPreview}
+          altText={"image of product preview card"}
+          liveLink={"https://ramyil-product-preview-card.netlify.app/"}
+          githubLink={"https://github.com/ramyilcodes/product-preview-card.git"}
+        />
+
+        <Card
           title={"Stats Preview Card"}
           text={"Stats card component from frontendmentor.io"}
           image={statsPreview}
@@ -146,6 +171,17 @@ function App() {
           githubLink={
             "https://github.com/ramyilcodes/fem-stats-preview-card.git"
           }
+        />
+
+        <Card
+          title={"QR Code Component"}
+          text={"A challenge from frontendmentor.io"}
+          image={qrCode}
+          altText={"image of a QR Code component"}
+          githubLink={
+            "https://github.com/ramyilcodes/fem-qr-code-component.git"
+          }
+          liveLink={"https://fem-qr-code-component-six.vercel.app/"}
         />
 
         <Card
@@ -159,6 +195,8 @@ function App() {
           }
         />
       </section>
+
+      {/*contsct section  */}
 
       <h2 className=" px-[2rem] text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">
         Contact Me
@@ -184,7 +222,7 @@ function App() {
         />
       </section>
 
-      <hr className=" w-full mb-[4rem] mobile:mb-[2rem]"/>
+      <hr className=" w-full mb-[4rem] mobile:mb-[2rem]" />
     </body>
   );
 }

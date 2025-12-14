@@ -6,7 +6,7 @@
 
 const Card = ({ image, altText, title, text, githubLink, liveLink }) => {
   return (
-    <div className=" grid  hover:bg-[#00000031] duration-[0.3s]  border-[3px] border-lighTeal rounded-[12px] h-min p-[2rem] hover:rounded-none">
+    <div className=" grid  hover:bg-[#00000031] duration-[0.3s]  border-[3px] border-lighTeal rounded-[12px] h-min p-[1.5rem] hover:rounded-none">
       <img src={image} alt={altText} className="mb-[0.5rem]" />
 
       <div className="grid">

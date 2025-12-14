@@ -22,7 +22,7 @@ function App() {
     <body className="font-['prompt'] grid place-items-center bg-darkTeal text-lightTeal px-[2rem] tablet:py-[2.5rem] mobile:py-[1rem] mobile:px-[1rem]">
       <nav
         id="top"
-        className=" w-full flex justify-between items-center sticky top-0 bg-inherit"
+        className=" w-full p-[0.5rem] flex justify-between items-center sticky top-0 bg-inherit"
       >
         <a href="#top">
           <h1 className=" text-[3rem] mobile:text-[2rem] tablet:text-[2.5rem]  inline">
@@ -50,11 +50,11 @@ function App() {
 
       <section className="px-[2rem] grid gap-[2rem] grid-cols-3 mobile:grid-cols-1 mobile:gap-[3rem] tablet:grid-cols-2 tablet:gap-[1.5]"></section> */}
 
-      <h2 className=" text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">
+      <h2 className=" px-[2rem] text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">
         Projects
       </h2>
 
-      <section className=" px-[2rem] grid gap-[2rem] grid-cols-3 mobile:grid-cols-1 mobile:gap-[3rem] tablet:grid-cols-2 tablet:gap-[1.5]">
+      <section className=" px-[2rem] grid gap-[2rem] grid-cols-3 mb-[10rem] mobile:mb-[7rem] mobile:grid-cols-1 mobile:gap-[3rem] tablet:grid-cols-2 tablet:gap-[1.5]">
         <Card
           title={"Amica"}
           text={
@@ -160,11 +160,11 @@ function App() {
         />
       </section>
 
-      <h2 className=" text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">
+      <h2 className=" px-[2rem] text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">
         Contact Me
       </h2>
 
-      <section className="px-[2rem] grid gap-[2rem] grid-cols-3 mobile:grid-cols-1 mobile:gap-[3rem] tablet:grid-cols-2 tablet:gap-[1.5]">
+      <section className="px-[2rem] grid gap-[2rem] grid-cols-3 mb-[7rem] mobile:mb-[5rem] mobile:grid-cols-1 mobile:gap-[1.5rem] tablet:grid-cols-2 tablet:gap-[1.5]">
         <ContactCard
           siteIcon={githubIcon}
           siteLink={"https://github.com/ramyilcodes"}
@@ -183,6 +183,8 @@ function App() {
           contactName={"ramyilramnan@gmail.com"}
         />
       </section>
+
+      <hr className=" w-full mb-[4rem] mobile:mb-[2rem]"/>
     </body>
   );
 }

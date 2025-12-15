@@ -2,6 +2,8 @@ import "./App.css";
 import Card from "./components/card.jsx";
 import ContactCard from "./components/contactCard.jsx";
 import myResume from ".././public/Ramnan Ramyil 2025.pdf";
+import ramnanGreen from "./assets/ramnanGreen.jpg";
+import ramnanBrown from "./assets/ramnanBrown.jpg";
 import downloadIcon from "./assets/download-icon.svg";
 import githubIcon from "./assets/github-white-icon.webp";
 import emailIcon from "./assets/email-icon.png";
@@ -28,9 +30,9 @@ function App() {
         className=" w-full p-[0.5rem] flex justify-between items-center sticky top-0 bg-inherit"
       >
         <a href="#top">
-          <h1 className=" text-[3rem] mobile:text-[2rem] tablet:text-[2.5rem]  inline">
+          <p className=" text-[3rem] mobile:text-[2rem] tablet:text-[2.5rem]  inline">
             Ramnan Ramyil
-          </h1>
+          </p>
         </a>
 
         <a href={myResume} download="Ramnan_Ramyil_Resume.pdf">
@@ -46,6 +48,29 @@ function App() {
           </span>
         </a>
       </nav>
+
+      <section className="px-[4rem] w-full flex justify-between items-center mobile:flex-col-reverse">
+        <div>
+          <p>
+            Hello There! I'm <span className=" font-bold">Ramnan</span> Ramyil.
+            <br />
+            I'm an aspiring software engineer based in Abuja, Nigeria. I
+            recently resumed my frontend journey after taking a hiatus to
+            explore computer networking. I'm currently studying{" "}
+            <a href="">Eloquent JS</a> to improve my logic and taking on
+            challenges from <a href="">frontendmentor.io</a>
+            Shoot me an email if you'd like to learn/build with me (I'm super friendly).
+          </p>
+        </div>
+        {/* <div className="size-[20rem] bg-[url(./assets/ramnanGreen.jpg)] "></div> */}
+        {/* <img src={ramnanBrown} alt="image of Ramnan" className="rounded-full w-[25rem]" /> */}
+
+        <img
+          src={ramnanGreen}
+          alt="image of Ramnan"
+          className="rounded-full w-[25rem] ml-[3rem] tablet:size-[25rem] mobile:size-[15rem]"
+        />
+      </section>
 
       {/* <h2 className=" text-[3rem] font-[300] mb-[1rem] mobile:text-[2rem] tablet:text-[2.5rem] place-self-start">
         Projects

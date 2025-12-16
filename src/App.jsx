@@ -275,7 +275,7 @@ function App() {
 
       <footer className="w-full text-center pb-[1.5rem]">
         <p className="font-[200]">
-          &copy; 2025. Developed by{" "}
+          &copy; 2025. Designed & Developed by{" "}
           <a
             href="https://www.linkedin.com/in/ramnan-ramyil-05323924a/"
             className="font-[400] hover:text-peach"

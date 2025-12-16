@@ -25,6 +25,7 @@ import singlePrice from "./assets/singlePrice.png";
 function App() {
   return (
     <body className="font-['prompt'] grid place-items-center bg-darkTeal text-lightTeal px-[2rem] tablet:py-[2.5rem] mobile:py-[1rem] mobile:px-[1rem]">
+      
       <nav
         id="top"
         className=" w-full p-[0.5rem] flex justify-between items-center sticky top-0 bg-inherit"
@@ -270,6 +271,8 @@ function App() {
         <p className="font-[200]">&copy; 2025. Developed by <a href="https://www.linkedin.com/in/ramnan-ramyil-05323924a/" className="font-[400]">Ramnan Ramyil.</a> All rights reserved.
         </p>
       </footer>
+
+      
     </body>
   );
 }

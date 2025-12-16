@@ -68,8 +68,14 @@ function App() {
             </a>{" "}
             Below are some of the stuff that I have worked/am working on.
             <br />
-            Shoot me an <a href="mailto: ramyilramnan@gmail.com" className=" italic font-[400] underline">email</a> if
-            you'd like to build with me.{" "}
+            Shoot me an{" "}
+            <a
+              href="mailto: ramyilramnan@gmail.com"
+              className=" italic font-[400] underline"
+            >
+              email
+            </a>{" "}
+            if you'd like to build with me.{" "}
             <span className=" text-sm">(I'm suuuper friendly)</span>
           </p>
         </div>
@@ -253,7 +259,7 @@ function App() {
 
         <ContactCard
           siteIcon={emailIcon}
-          // siteLink={"https://github.com/ramyilcodes"}
+          siteLink={"mailto: ramyilramnan@gmail.com"}
           contactName={"ramyilramnan@gmail.com"}
         />
       </section>

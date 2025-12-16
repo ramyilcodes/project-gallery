@@ -264,7 +264,12 @@ function App() {
         />
       </section>
 
-      <hr className=" w-full mb-[4rem] mobile:mb-[2rem]" />
+      <hr className=" w-full mb-[2rem]" />
+
+      <footer className="w-full text-center pb-[1.5rem]">
+        <p className="font-[200]">&copy; 2025. Developed by <a href="https://www.linkedin.com/in/ramnan-ramyil-05323924a/" className="font-[400]">Ramnan Ramyil.</a> All rights reserved.
+        </p>
+      </footer>
     </body>
   );
 }

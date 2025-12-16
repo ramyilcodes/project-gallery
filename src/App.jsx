@@ -25,7 +25,6 @@ import singlePrice from "./assets/singlePrice.png";
 function App() {
   return (
     <body className="font-['prompt'] grid place-items-center bg-darkTeal text-lightTeal px-[2rem] tablet:py-[2.5rem] mobile:py-[1rem] mobile:px-[1rem]">
-      
       <nav
         id="top"
         className=" w-full p-[0.5rem] flex justify-between items-center sticky top-0 bg-inherit"
@@ -38,7 +37,7 @@ function App() {
 
         <a href={myResume} download="Ramnan_Ramyil_Resume.pdf">
           <span className="flex items-center">
-            <span className="text-[1.5rem] tablet:text-[1rem] mobile:hidden">
+            <span className="text-[1.5rem] hover:text-peach tablet:text-[1rem] mobile:hidden">
               My Resume
             </span>
             <img
@@ -50,21 +49,28 @@ function App() {
         </a>
       </nav>
 
-      <section className="px-[4rem] tablet:mb-[3.5rem] w-full flex justify-between items-center tablet:items-start mobile:items-center mobile:flex-col-reverse mobile:text-center">
+      <section className="px-[4rem] mb-[2rem] tablet:mb-[3.5rem] w-full flex justify-between items-center tablet:items-start tablet:px-[2rem] mobile:px-[1.5rem] mobile:items-center mobile:flex-col-reverse mobile:justify-center mobile:text-center">
         <div>
           <p className=" font-[200] text-[3.5rem] mb-[2rem] tablet:text-[3rem] leading-[3.5rem] mobile:text-[2.5rem] ">
-            Hello there! I'm <span className=" font-bold">Ramnan</span> Ramyil.
+            Hello there! I'm{" "}
+            <span className=" font-bold text-peach">Ramnan</span> Ramyil.
           </p>
           <p className="font-[200] text-[1.8rem] tablet:text-[1.5rem] mobile:text-[1.3rem]">
             I'm an aspiring software engineer based in{" "}
-            <span className="font-[400]">Abuja, Nigeria</span>.
+            <span className="font-[400] text-peach">Abuja, Nigeria</span>.
             <br />I recently resumed my frontend journey after taking a hiatus
             to explore computer networking. Currently, I'm studying{" "}
-            <a href="https://eloquentjavascript.net/" className=" underline">
+            <a
+              href="https://eloquentjavascript.net/"
+              className=" underline hover:font-[400]"
+            >
               Eloquent JS
             </a>{" "}
             to improve my logic and taking on challenges from{" "}
-            <a href="https://www.frontendmentor.io/" className=" underline">
+            <a
+              href="https://www.frontendmentor.io/"
+              className=" underline hover:font-[400]"
+            >
               frontendmentor.
             </a>{" "}
             Below are some of the stuff that I have worked/am working on.
@@ -72,12 +78,12 @@ function App() {
             Shoot me an{" "}
             <a
               href="mailto: ramyilramnan@gmail.com"
-              className=" italic font-[400] underline"
+              className="text-peach italic font-[400] underline"
             >
               email
             </a>{" "}
             if you'd like to build with me.{" "}
-            <span className=" text-sm">(I'm suuuper friendly)</span>
+            <span className=" text-sm text-peach">(I'm suuuper friendly)</span>
           </p>
         </div>
         {/* <div className="size-[20rem] bg-[url(./assets/ramnanGreen.jpg)] "></div> */}
@@ -86,7 +92,7 @@ function App() {
         <img
           src={ramnanGreen}
           alt="image of Ramnan"
-          className="rounded-full w-[25rem] ml-[3rem] tablet:size-[25rem] mobile:size-[15rem]"
+          className="rounded-full w-[25rem] ml-[3rem] mobile:ml-0 tablet:size-[25rem] mobile:size-[15rem]"
         />
       </section>
 
@@ -111,6 +117,17 @@ function App() {
         />
 
         <Card
+          title={"NNIA"}
+          text={
+            "Group volunteer project for nHub Foundation. I developed the about and programmes pages"
+          }
+          image={nnia}
+          altText={"image of NNIA's about page"}
+          liveLink={"https://nnia.ng/"}
+          githubLink={"https://github.com/ramyilcodes/hub-project.git"}
+        />
+
+        <Card
           title={"Fundamentals Highschool"}
           text={
             "Volunteered to make a landing page for The Fundamentals Highschool."
@@ -121,17 +138,6 @@ function App() {
           githubLink={
             "https://github.com/ramyilcodes/thefundamentalshighschool.git"
           }
-        />
-
-        <Card
-          title={"NNIA"}
-          text={
-            "Group volunteer project for nHub Foundation. I developed the about and programmes pages"
-          }
-          image={nnia}
-          altText={"image of NNIA's about page"}
-          liveLink={"https://nnia.ng/"}
-          githubLink={"https://github.com/ramyilcodes/hub-project.git"}
         />
 
         <Card
@@ -268,11 +274,17 @@ function App() {
       <hr className=" w-full mb-[2rem]" />
 
       <footer className="w-full text-center pb-[1.5rem]">
-        <p className="font-[200]">&copy; 2025. Developed by <a href="https://www.linkedin.com/in/ramnan-ramyil-05323924a/" className="font-[400]">Ramnan Ramyil.</a> All rights reserved.
+        <p className="font-[200]">
+          &copy; 2025. Developed by{" "}
+          <a
+            href="https://www.linkedin.com/in/ramnan-ramyil-05323924a/"
+            className="font-[400] hover:text-peach"
+          >
+            Ramnan Ramyil.
+          </a>{" "}
+          All rights reserved.
         </p>
       </footer>
-
-      
     </body>
   );
 }

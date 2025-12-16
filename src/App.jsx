@@ -49,12 +49,12 @@ function App() {
         </a>
       </nav>
 
-      <section className="px-[4rem] w-full flex justify-between items-center mobile:flex-col-reverse">
+      <section className="px-[4rem] tablet:mb-[3.5rem] w-full flex justify-between items-center tablet:items-start mobile:items-center mobile:flex-col-reverse mobile:text-center">
         <div>
-          <p className=" font-[200] text-[3.5rem] mb-[2rem]">
+          <p className=" font-[200] text-[3.5rem] mb-[2rem] tablet:text-[3rem] leading-[3.5rem] mobile:text-[2.5rem] ">
             Hello there! I'm <span className=" font-bold">Ramnan</span> Ramyil.
           </p>
-          <p className="font-[200] text-[1.8rem]">
+          <p className="font-[200] text-[1.8rem] tablet:text-[1.5rem] mobile:text-[1.3rem]">
             I'm an aspiring software engineer based in{" "}
             <span className="font-[400]">Abuja, Nigeria</span>.
             <br />I recently resumed my frontend journey after taking a hiatus
@@ -244,7 +244,7 @@ function App() {
         Contact Me
       </h2>
 
-      <section className="px-[2rem] grid gap-[2rem] grid-cols-3 mb-[7rem] mobile:mb-[5rem] mobile:grid-cols-1 mobile:gap-[1.5rem] tablet:grid-cols-2 tablet:gap-[1.5]">
+      <section className="px-[2rem] grid gap-[2rem] grid-cols-3 mb-[7rem] mobile:mb-[5rem] mobile:grid-cols-1 mobile:gap-[1.5rem] tablet:grid-cols-2 tablet:gap-[1.5rem]">
         <ContactCard
           siteIcon={githubIcon}
           siteLink={"https://github.com/ramyilcodes"}

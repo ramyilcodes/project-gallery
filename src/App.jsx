@@ -260,7 +260,7 @@ function App() {
         <ContactCard
           siteIcon={emailIcon}
           siteLink={"mailto: ramyilramnan@gmail.com"}
-          contactName={"ramyilramnan@gmail.com"}
+          contactName={"ramyilramnan @gmail.com"}
         />
       </section>
 

@@ -51,15 +51,26 @@ function App() {
 
       <section className="px-[4rem] w-full flex justify-between items-center mobile:flex-col-reverse">
         <div>
-          <p>
-            Hello There! I'm <span className=" font-bold">Ramnan</span> Ramyil.
+          <p className=" font-[200] text-[3.5rem] mb-[2rem]">
+            Hello there! I'm <span className=" font-bold">Ramnan</span> Ramyil.
+          </p>
+          <p className="font-[200] text-[1.8rem]">
+            I'm an aspiring software engineer based in{" "}
+            <span className="font-[400]">Abuja, Nigeria</span>.
+            <br />I recently resumed my frontend journey after taking a hiatus
+            to explore computer networking. Currently, I'm studying{" "}
+            <a href="https://eloquentjavascript.net/" className=" underline">
+              Eloquent JS
+            </a>{" "}
+            to improve my logic and taking on challenges from{" "}
+            <a href="https://www.frontendmentor.io/" className=" underline">
+              frontendmentor.
+            </a>{" "}
+            Below are some of the stuff that I have worked/am working on.
             <br />
-            I'm an aspiring software engineer based in Abuja, Nigeria. I
-            recently resumed my frontend journey after taking a hiatus to
-            explore computer networking. I'm currently studying{" "}
-            <a href="">Eloquent JS</a> to improve my logic and taking on
-            challenges from <a href="">frontendmentor.io</a>
-            Shoot me an email if you'd like to learn/build with me (I'm super friendly).
+            Shoot me an <a href="mailto: ramyilramnan@gmail.com" className=" italic font-[400] underline">email</a> if
+            you'd like to build with me.{" "}
+            <span className=" text-sm">(I'm suuuper friendly)</span>
           </p>
         </div>
         {/* <div className="size-[20rem] bg-[url(./assets/ramnanGreen.jpg)] "></div> */}

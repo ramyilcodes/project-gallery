@@ -99,7 +99,7 @@ function App() {
         Projects
       </h2>
 
-      <section className=" px-[2rem] grid gap-[2rem] grid-cols-3 mb-[10rem] mobile:mb-[7rem] mobile:grid-cols-1 mobile:gap-[3rem] tablet:grid-cols-2 tablet:gap-[1.5]">
+      <section className=" px-[2rem] grid gap-[2rem] grid-cols-3 mb-[8rem] mobile:mb-[4.5rem] mobile:grid-cols-1 mobile:gap-[3rem] tablet:grid-cols-2 tablet:gap-[1.5] tablet:mb-[5rem]">
         <Card
           title={"Adsofun"}
           text={"Volunteer work with a friend for Adsofun Concepts LLC"}
@@ -244,7 +244,7 @@ function App() {
         Contact Me
       </h2>
 
-      <section className="px-[2rem] grid gap-[2rem] grid-cols-3 mb-[7rem] mobile:mb-[5rem] mobile:grid-cols-1 mobile:gap-[1.5rem] tablet:grid-cols-2 tablet:gap-[1.5rem]">
+      <section className="px-[2rem] grid gap-[2rem] grid-cols-3 mb-[7rem] mobile:mb-[4rem] mobile:grid-cols-1 mobile:gap-[1.5rem] tablet:grid-cols-2 tablet:gap-[1.5rem] tablet:mb-[5rem]">
         <ContactCard
           siteIcon={githubIcon}
           siteLink={"https://github.com/ramyilcodes"}
